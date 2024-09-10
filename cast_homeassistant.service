@@ -1,12 +1,7 @@
 [Unit]
 Description=Cast Home Assistant
-After=network.target
 
 [Service]
-Type=simple
 User=pi
+Type=oneshot
 ExecStart=/home/pi/homeassistant/cast.sh
-Restart=on-failure
-
-[Install]
-WantedBy=default.target

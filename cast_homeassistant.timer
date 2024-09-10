@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer Cast Home Assistant
+
+[Timer]
+OnBootSec=30s
+OnCalendar=*-*-* 07:00:00
+
+[Install]
+WantedBy=timers.target
